@@ -1,21 +1,31 @@
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.preprocessing import LabelEncoder
+from sklearn.model_selection import train_test_split
 
 tfidf_word_value = []
+X = []
 
 readIn = pd.read_csv("../Clean/lemma_result.csv")
-sample = readIn.head(1000)
 
-all_review_cleaned = sample['cleaned_review'].astype('string')
-all_label = sample['Label'].astype('string')
-all_review_cleaned.drop(all_review_cleaned.head(0))
+X_temp = readIn.iloc[:10, :-1].values
+Y = readIn.iloc[:10, -1].values
+
+for sentence in X_temp:
+    X.append(sentence[0])
+
+#split data
+X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size = 0.2, random_state = 1)
 
 # TF-IDF
 vectorizer = TfidfVectorizer()
-X = vectorizer.fit_transform(all_review_cleaned)
+X_train = vectorizer.fit_transform(X_train)
+X_test = vectorizer.transform(X_test)
 
-test = pd.DataFrame(X.toarray(), columns=vectorizer.get_feature_names())
-test.to_csv("./tfidf_result.csv", index=False)
+
+
+#test = pd.DataFrame(X.toarray(), columns=vectorizer.get_feature_names())
+#test.to_csv("./tfidf_result.csv", index=False)
 
 
 # print(X.shape)
