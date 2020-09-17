@@ -13,8 +13,8 @@ reSentence = []
 allLabel = []
 
 # bring in sentence from file
-readIn = pd.read_csv("IMDB Dataset.csv")
-sample = readIn.head(1000)
+readIn = pd.read_csv("IMDBScrape.csv")
+sample = readIn
 InFilter = sample['review'].astype('string')
 Label = sample['sentiment'].astype('string')
 InFilter.drop(InFilter.head(0))
@@ -22,7 +22,7 @@ InFilter.drop(InFilter.head(0))
 for label in Label:
     allLabel.append(label)
 
-#Encode Label
+# Encode Label
 le = LabelEncoder()
 EnLabel = le.fit_transform(allLabel)
 print(EnLabel)
