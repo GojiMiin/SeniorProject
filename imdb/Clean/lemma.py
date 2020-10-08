@@ -13,7 +13,7 @@ reSentence = []
 allLabel = []
 
 # bring in sentence from file
-readIn = pd.read_csv("IMDBScrape.csv")
+readIn = pd.read_csv("../SeniorProjectFile/imdb_master.csv")
 sample = readIn
 InFilter = sample['review'].astype('string')
 Label = sample['sentiment'].astype('string')
