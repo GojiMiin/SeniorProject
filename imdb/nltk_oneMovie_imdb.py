@@ -1,6 +1,7 @@
 import nltk, re, pprint
 import json
 import requests
+import pandas as pd
 from nltk import word_tokenize
 from urllib import request
 from bs4 import BeautifulSoup
@@ -15,7 +16,7 @@ def preprocess(sentence):
 	return filtered_words#" ".join(filtered_words)
 
 #get id
-main_url = "https://www.imdb.com/title/tt8579674/reviews?ref_=tt_ql_3"
+main_url = "https://www.imdb.com/title/tt5013056/reviews?ref_=tt_ql_3"
 html = request.urlopen(main_url).read().decode('utf8')
 html[:400]
 
@@ -29,6 +30,9 @@ for div in review_only:
         ids.append(ID)
 #print(ids)
 #get review
+
+reviewsCSV = []
+
 for eachid in ids:
     
 	url = "https://www.imdb.com/review/"+eachid+"/?ref_=tt_urv"
@@ -41,9 +45,15 @@ for eachid in ids:
 
 	data = json.loads(raw.find('script', type='application/ld+json').text)
 	review = data['reviewBody']
-	token = preprocess(review)
+	#token = preprocess(review)
+
+	reviewsCSV.append(review)
 
 	print("*************************************************************************************************************")
 	print(eachid)
-	print(token)
+	#print(token)
+	print(review)
 	
+data = {'Full Review': reviewsCSV}
+toFile = pd.DataFrame(data)
+toFile.to_csv("./oneMovieReview.csv", index=False)

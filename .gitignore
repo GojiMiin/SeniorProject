@@ -1,1 +1,3 @@
 *.csv
+imdb/Model/glove.6B/
+*.xlsx
