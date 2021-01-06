@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="221da0b3-3058-47db-9930-b3e5d4062a6c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/imdb/Clean/Dataset.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/imdb/Clean/Dataset.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SeniorProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SeniorProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imdb/Clean/Dataset.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imdb/detailFetch.py" beforeDir="false" afterPath="$PROJECT_DIR$/imdb/detailFetch.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +60,7 @@
       <workItem from="1609930335771" duration="821000" />
       <workItem from="1609931512127" duration="3519000" />
       <workItem from="1609941890783" duration="5239000" />
+      <workItem from="1609947681452" duration="6314000" />
     </task>
     <servers />
   </component>
