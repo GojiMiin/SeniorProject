@@ -4,7 +4,7 @@ import pandas as pd
 data = pd.read_csv('18_19.csv')
 client =  MongoClient("mongodb+srv://GojiMiin:342510@movieweb.r4ob8.mongodb.net/test?retryWrites=true&w=majority")
 db = client['MovieDetail']
-collection = db['Imdb']
+collection = db['allMovie']
 
 data.reset_index(inplace=True)
 data_dict = data.to_dict("records")
