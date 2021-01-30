@@ -28,47 +28,8 @@ config:
       dtype: float32
       name: dropout
       noise_shape: null
-      rate: 0.2
+      rate: 0.5
       seed: null
-      trainable: true
-  - class_name: Conv1D
-    config:
-      activation: relu
-      activity_regularizer: null
-      bias_constraint: null
-      bias_initializer:
-        class_name: Zeros
-        config: {}
-      bias_regularizer: null
-      data_format: channels_last
-      dilation_rate: !!python/tuple
-      - 1
-      dtype: float32
-      filters: 64
-      kernel_constraint: null
-      kernel_initializer:
-        class_name: GlorotUniform
-        config:
-          seed: null
-      kernel_regularizer: null
-      kernel_size: !!python/tuple
-      - 5
-      name: conv1d
-      padding: valid
-      strides: !!python/tuple
-      - 1
-      trainable: true
-      use_bias: true
-  - class_name: MaxPooling1D
-    config:
-      data_format: channels_last
-      dtype: float32
-      name: max_pooling1d
-      padding: valid
-      pool_size: !!python/tuple
-      - 4
-      strides: !!python/tuple
-      - 4
       trainable: true
   - class_name: GRU
     config:
@@ -125,6 +86,26 @@ config:
           seed: null
       kernel_regularizer: null
       name: dense
+      trainable: true
+      units: 10
+      use_bias: true
+  - class_name: Dense
+    config:
+      activation: sigmoid
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: Zeros
+        config: {}
+      bias_regularizer: null
+      dtype: float32
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: GlorotUniform
+        config:
+          seed: null
+      kernel_regularizer: null
+      name: dense_1
       trainable: true
       units: 1
       use_bias: true

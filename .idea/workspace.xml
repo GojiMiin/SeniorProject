@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="221da0b3-3058-47db-9930-b3e5d4062a6c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imdb/Model/Clean data - rotten.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imdb/Model/GRU_model_rotten.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rotten/Model/Clean data - rotten.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/rotten/Model/Clean data - rotten.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +76,8 @@
       <workItem from="1610717084226" duration="542000" />
       <workItem from="1610785834574" duration="3152000" />
       <workItem from="1611819794960" duration="556000" />
+      <workItem from="1611912182923" duration="107000" />
+      <workItem from="1611912717190" duration="336000" />
     </task>
     <servers />
   </component>
