@@ -44,9 +44,6 @@ for link in allurl:
         #get movie category
         cate = movieBlock[i].find('span',{'class':'genre'}).contents[0]
 
-        #get movie poster link
-        plink = movieCodeLocation[i].find('img',{'class':'loadlate'}).get('loadlate')
-
         #get movie description
         des = movieBlock[i].find('p',{'class':''}).contents
 
@@ -70,8 +67,6 @@ for link in allurl:
         del_n = re.sub("\n", "", str(cate))
         movieCate.append(del_n.rstrip())
 
-        moviePoster.append(plink)
-
         #Clean movie description
         for i in des:
             des_del_n = re.sub("\n","", str(i))
@@ -83,6 +78,19 @@ for link in allurl:
         movieDesciption.append(full_sentence.strip())
         movieScore.append(score)
 
+for i in movieCode:
+    openn = request.urlopen("https://www.imdb.com/title/"+i+"/?ref_=ttls_li_tt").read().decode('utf8')
+    openn[:400]
+    mPage = BeautifulSoup(openn, 'html.parser')
+    pBlock = mPage.find('div',{'class':'poster'})
+    posterLink = pBlock.find('a', href=True).get('href')
+
+    new_open = request.urlopen("https://www.imdb.com"+posterLink).read().decode('utf8')
+    new_open[:400]
+    fpPage = BeautifulSoup(new_open, 'html.parser')
+    posterBlock = fpPage.find('div',{'class':'MediaViewerImagestyles__PortraitContainer-sc-1qk433p-2 gIroZm'})
+    fullPoster = posterBlock.find('img').get('src')
+    moviePoster.append(fullPoster)
 
 data = {'source': movieSource,
         'code': movieCode,
@@ -96,5 +104,5 @@ data = {'source': movieSource,
         'description': movieDesciption}
 toFile = pd.DataFrame(data)
 
-toFile.to_csv("./18_19.csv", index=False)
+toFile.to_csv("./18_19_poster.csv", index=False)
 
