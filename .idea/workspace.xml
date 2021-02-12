@@ -3,15 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="221da0b3-3058-47db-9930-b3e5d4062a6c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imdb/Model/.ipynb_checkpoints/GRU_model-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/imdb/Model/.ipynb_checkpoints/GRU_model-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imdb/Model/.ipynb_checkpoints/LSTM_model-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/imdb/Model/.ipynb_checkpoints/LSTM_model-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imdb/Model/.ipynb_checkpoints/SimpleRNN_model-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/imdb/Model/.ipynb_checkpoints/SimpleRNN_model-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imdb/Model/GRU_model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/imdb/Model/GRU_model.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imdb/Model/LSTM_model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/imdb/Model/LSTM_model.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imdb/Model/SimpleRNN_model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/imdb/Model/SimpleRNN_model.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imdb/detailFetch.py" beforeDir="false" afterPath="$PROJECT_DIR$/imdb/detailFetch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rotten/Model/Clean data - rotten.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/rotten/Model/Clean data - rotten.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rotten/Model/GRU_model_rotten.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/rotten/Model/GRU_model_rotten.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +79,8 @@
       <workItem from="1611912182923" duration="107000" />
       <workItem from="1611912717190" duration="336000" />
       <workItem from="1612612077543" duration="7627000" />
+      <workItem from="1612951122334" duration="127000" />
+      <workItem from="1613125771574" duration="1837000" />
     </task>
     <servers />
   </component>

@@ -5,7 +5,6 @@ import pandas as pd
 
 movieName = []
 movieCode = []
-movieSource = []
 movieYear = []
 movieTime = []
 movieRate = []
@@ -13,7 +12,7 @@ movieCate = []
 moviePoster = []
 movieDesciption = []
 clean_des = []
-movieScore = []
+imdbScore = []
 
 allurl = ["https://www.imdb.com/list/ls058813655/", "https://www.imdb.com/list/ls022596827/"] #2018,2019
 for link in allurl:
@@ -51,7 +50,6 @@ for link in allurl:
         score = movieBlock[i].find('span',{'class':'ipl-rating-star__rating'}).contents[0]
 
         movieName.append(str(name))
-        movieSource.append("imdb")
         movieCode.append(str(code))
         movieYear.append(yearNum[0])
         movieTime.append(time)
@@ -76,7 +74,7 @@ for link in allurl:
         full_sentence = " ".join(clean_des)
         clean_des = []
         movieDesciption.append(full_sentence.strip())
-        movieScore.append(score)
+        imdbScore.append(score)
 
 for i in movieCode:
     openn = request.urlopen("https://www.imdb.com/title/"+i+"/?ref_=ttls_li_tt").read().decode('utf8')
@@ -92,17 +90,16 @@ for i in movieCode:
     fullPoster = posterBlock.find('img').get('src')
     moviePoster.append(fullPoster)
 
-data = {'source': movieSource,
-        'code': movieCode,
+data = {'code': movieCode,
         'year': movieYear,
         'name': movieName,
         'time': movieTime,
         'category': movieCate,
         'rate': movieRate,
-        'score': movieScore,
+        'imdbscore': imdbScore,
         'poster': moviePoster,
         'description': movieDesciption}
 toFile = pd.DataFrame(data)
 
-toFile.to_csv("./18_19_poster.csv", index=False)
+toFile.to_csv("./18_19.csv", index=False)
 
