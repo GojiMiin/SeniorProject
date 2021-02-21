@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="221da0b3-3058-47db-9930-b3e5d4062a6c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imdb/Model/SimpleRNN_model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/imdb/Model/SimpleRNN_model.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rotten/Model/GRU_model_rotten.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/rotten/Model/GRU_model_rotten.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +57,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.notebooks.jupyter.connections.configuration.JupyterServerConfigurable" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -83,6 +85,7 @@
       <workItem from="1613377173314" duration="182000" />
       <workItem from="1613377500756" duration="449000" />
       <workItem from="1613546681761" duration="145000" />
+      <workItem from="1613914797781" duration="43000" />
     </task>
     <servers />
   </component>
