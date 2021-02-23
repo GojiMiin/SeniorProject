@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="221da0b3-3058-47db-9930-b3e5d4062a6c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rotten/Model/Clean data - rotten.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/rotten/Model/Clean data - rotten.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +49,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../flask" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -83,6 +84,9 @@
       <workItem from="1613377173314" duration="182000" />
       <workItem from="1613377500756" duration="449000" />
       <workItem from="1613546681761" duration="145000" />
+      <workItem from="1613550959251" duration="36000" />
+      <workItem from="1613988400439" duration="214000" />
+      <workItem from="1613991763553" duration="445000" />
     </task>
     <servers />
   </component>
