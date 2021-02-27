@@ -23,14 +23,6 @@ config:
       name: embedding
       output_dim: 128
       trainable: true
-  - class_name: Dropout
-    config:
-      dtype: float32
-      name: dropout
-      noise_shape: null
-      rate: 0.5
-      seed: null
-      trainable: true
   - class_name: SimpleRNN
     config:
       activation: tanh
@@ -66,6 +58,14 @@ config:
       units: 100
       unroll: false
       use_bias: true
+  - class_name: Dropout
+    config:
+      dtype: float32
+      name: dropout
+      noise_shape: null
+      rate: 0.5
+      seed: null
+      trainable: true
   - class_name: Dense
     config:
       activation: sigmoid
