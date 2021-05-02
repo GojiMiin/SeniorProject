@@ -32,7 +32,7 @@ config:
         class_name: Zeros
         config: {}
       bias_regularizer: null
-      dropout: 0.5
+      dropout: 0.0
       dtype: float32
       go_backwards: false
       implementation: 2
@@ -58,7 +58,7 @@ config:
       time_major: false
       trainable: true
       unit_forget_bias: true
-      units: 15
+      units: 100
       unroll: false
       use_bias: true
   - class_name: Dropout
